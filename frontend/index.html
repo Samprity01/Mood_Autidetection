@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoonized Emotion Detector</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-purple-400 to-pink-500 min-h-screen flex flex-col items-center justify-center">
+  <header class="text-center mb-6">
+    <h1 class="text-5xl font-extrabold text-white">MoodMapoon</h1>
+    <p class="mt-4 text-lg text-white">Detect emotions while watching fun cartoonized videos!</p>
+  </header>
+
+  <main class="w-full max-w-4xl bg-white rounded-lg shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4">Choose a Video</h2>
+    <select id="videoSelect" class="w-full p-2 rounded-md border border-gray-300">
+      <option value="https://www.youtube.com/embed/J---aiyznGQ">Cats</option>
+      <option value="https://www.youtube.com/embed/3GRSbr0EYYU">Dogs</option>
+      <option value="https://www.youtube.com/embed/L5IAQ9XwK5Y">Babies</option>
+      <option value="https://www.youtube.com/embed/CIaWoBlP5yU">Pranks</option>
+      <option value="https://www.youtube.com/embed/9lG5oSDlnLM">Skits</option>
+    </select>
+
+    <div class="mt-6">
+      <iframe id="videoPlayer" class="w-full h-64 rounded-md shadow-md" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <button id="startDetection" class="mt-6 bg-purple-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-800">
+      Start Emotion Detection
+    </button>
+  </main>
+
+  <footer class="mt-8 text-white text-sm">
+    &copy; 2024 MoodMapoon | Powered by AI
+  </footer>
+</body>
+</html>

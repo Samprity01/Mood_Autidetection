@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #9c27b0, #f50057);
+  }
+  
+  /* Header Styles */
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-top: 1rem;
+  }
+  
+  /* Main Container */
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  /* Heading Style */
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #4a4a4a;
+  }
+  
+  /* Dropdown Styles */
+  select {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    color: #4a4a4a;
+    background-color: #f9fafb;
+    transition: all 0.3s ease;
+  }
+  
+  select:hover {
+    border-color: #9c27b0;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #f50057;
+  }
+  
+  /* Video Player */
+  iframe {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #9c27b0;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #f50057;
+    transform: scale(1.05);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #ffffff;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    iframe {
+      height: 250px;
+    }
+  
+    button {
+      padding: 0.5rem 1.25rem;
+    }
+  }
+  
